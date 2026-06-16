@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Shringar & General Store | Premium Luxury Retail</title>
+    <meta name="description" content="Premium destination for Cosmetics, Jewellery, Beauty and General Store items. Experience luxury at Lucky Shringar.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Animation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <h1 class="loader-logo">Lucky Shringar</h1>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Announcement Ticker -->
+    <div class="announcement-ticker">
+        <div class="ticker-text">
+            ✨ Special Festival Offer: 20% Off on Bridal Jewellery! ✨ | New Arrivals in Premium Cosmetics ✨ | Free Gift on Purchases above ₹2000! ✨
+        </div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-main">लकी श्रृंगार <span class="en">Lucky Shringar</span></span>
+                <span class="logo-sub">& General Store</span>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#categories">Collections</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+                <a href="https://wa.me/919827336781" class="cta-nav">WhatsApp Now</a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+            <div class="particles-container" id="particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h2 class="hero-subtitle reveal-text">Elevate Your Beauty</h2>
+            <h1 class="hero-title reveal-text">Exquisite Collection <br> <span class="shimmer-text">For Every Occasion</span></h1>
+            <p class="hero-description reveal-text">Discover a curated world of premium cosmetics, timeless jewellery, and daily essentials designed for the modern woman.</p>
+            
+            <div class="hero-btns reveal-text">
+                <a href="#categories" class="btn btn-primary">Explore Collections</a>
+                <a href="#contact" class="btn btn-secondary glass-btn">Visit Store</a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Products</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="1500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years of Trust</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="floating-elements">
+                <div class="float-item item-1"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=400" alt="Cosmetic"></div>
+                <div class="float-item item-2"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=400" alt="Jewellery"></div>
+                <div class="float-item item-3"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=400" alt="Beauty"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section id="categories" class="categories-section">
+        <div class="section-header">
+            <span class="badge">Our Expertise</span>
+            <h2 class="section-title">Luxury Collections</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="beauty">Cosmetics</button>
+                <button class="filter-btn" data-filter="jewellery">Jewellery</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="puja">Puja</button>
+                <button class="filter-btn" data-filter="others">Others</button>
+            </div>
+        </div>
+
+        <div class="categories-grid">
+            <!-- Cosmetics -->
+            <div class="category-card" data-category="beauty">
+                <div class="card-inner" data-tilt>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600" alt="Cosmetics">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Cosmetics & Beauty</h3>
+                        <p>Lipstick, Kajal, Eyeliner, Foundation & more...</p>
+                        <ul class="item-list">
+                            <li>Lipstick & Nail Polish</li>
+                            <li>Face Wash & Foundations</li>
+                            <li>Perfumes & Deodorants</li>
+                        </ul>
+                        <a href="#" class="view-more">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jewellery -->
+            <div class="category-card" data-category="jewellery">
+                <div class="card-inner" data-tilt>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=600" alt="Jewellery">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jewellery & Shringar</h3>
+                        <p>Bangles, Earrings, Mangalsutra, Bridal Sets...</p>
+                        <ul class="item-list">
+                            <li>Bridal Bangles & Sets</li>
+                            <li>Antique Jhumkas & Haar</li>
+                            <li>Artificial & Traditional</li>
+                        </ul>
+                        <a href="#" class="view-more">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hair Accessories -->
+            <div class="category-card" data-category="fashion">
+                <div class="card-inner" data-tilt>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1610450949065-1f280047fa5a?auto=format&fit=crop&q=80&w=600" alt="Hair Accessories">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Hair Accessories</h3>
+                        <p>Clips, Bands, Scrunchies, Juda Pins...</p>
+                        <ul class="item-list">
+                            <li>Designer Hair Clips</li>
+                            <li>Silk Scrunchies</li>
+                            <li>Traditional Juda Pins</li>
+                        </ul>
+                        <a href="#" class="view-more">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puja Items -->
+            <div class="category-card" data-category="puja">
+                <div class="card-inner" data-tilt>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1623916960395-950c0e5a8824?auto=format&fit=crop&q=80&w=600" alt="Puja Items">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Puja & Devotional</h3>
+                        <p>Agarbatti, Dhoop, Thali, Kumkum...</p>
+                        <ul class="item-list">
+                            <li>Premium Agarbatti</li>
+                            <li>Designer Puja Thalis</li>
+                            <li>Pure Camphor & Diya</li>
+                        </ul>
+                        <a href="#" class="view-more">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Store -->
+            <div class="category-card" data-category="others">
+                <div class="card-inner" data-tilt>
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=80&w=600" alt="General Store">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3>General Store</h3>
+                        <p>Daily Essentials, Personal Care, Household...</p>
+                        <ul class="item-list">
+                            <li>Soaps & Shampoos</li>
+                            <li>Tailoring Accessories</li>
+                            <li>Gift Sets & More</li>
+                        </ul>
+                        <a href="#" class="view-more">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Inventory Section -->
+    <section class="inventory-section">
+        <div class="container">
+            <div class="inventory-grid">
+                <div class="inventory-col fade-up">
+                    <h4><i class="fas fa-magic"></i> Cosmetics & Beauty</h4>
+                    <ul>
+                        <li>Lipstick, Kajal & Eyeliner</li>
+                        <li>Nail Polish & Makeup Kits</li>
+                        <li>Face Wash & Foundations</li>
+                        <li>BB Cream & Compact Powder</li>
+                        <li>Sindoor & Mehendi</li>
+                        <li>Perfumes & Deodorants</li>
+                        <li>Hair Oil, Face Cream & Lotion</li>
+                    </ul>
+                </div>
+                <div class="inventory-col fade-up">
+                    <h4><i class="fas fa-gem"></i> Jewellery & Shringar</h4>
+                    <ul>
+                        <li>Bridal Bangles & Sets</li>
+                        <li>Earrings & Antique Jhumkas</li>
+                        <li>Necklace, Haar & Mangalsutra</li>
+                        <li>Rings & Bracelets</li>
+                        <li>Artificial & Bridal Jewellery</li>
+                        <li>Anklets & Nose Pins</li>
+                        <li>Maang Tikka & Traditional Sets</li>
+                    </ul>
+                </div>
+                <div class="inventory-col fade-up">
+                    <h4><i class="fas fa-ribbon"></i> Hair & Fashion</h4>
+                    <ul>
+                        <li>Clips, Bands & Scrunchies</li>
+                        <li>Hair Pins & Juda Pins</li>
+                        <li>Rubber Bands & Decorative Items</li>
+                        <li>Designer Bindi & Handbags</li>
+                        <li>Purses & Cosmetic Pouches</li>
+                        <li>Mirrors & Ladies Accessories</li>
+                    </ul>
+                </div>
+                <div class="inventory-col fade-up">
+                    <h4><i class="fas fa-om"></i> Puja & Household</h4>
+                    <ul>
+                        <li>Agarbatti, Dhoop & Thalis</li>
+                        <li>Diya, Kumkum & Camphor</li>
+                        <li>Cotton Wicks & Religious Items</li>
+                        <li>Sewing Thread & Needles</li>
+                        <li>Safety Pins & Buttons</li>
+                        <li>Tailoring & Household Items</li>
+                        <li>Soaps, Shampoo & Daily Needs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="features-section">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="section-title">The Lucky Standard</h2>
+                <p>Providing quality and trust for over a decade in the heart of the city.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Premium Quality</h3>
+                    <p>We source only the finest cosmetics and authentic jewellery for our customers.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                    <h3>Best Pricing</h3>
+                    <p>Luxury and quality that fits every budget, ensuring value in every purchase.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Wide Variety</h3>
+                    <p>From daily essentials to bridal shringar, we have everything under one roof.</p>
+                </div>
+                <div class="feature-card fade-up">
+                    <div class="feature-icon"><i class="fas fa-star"></i></div>
+                    <h3>Customer Trust</h3>
+                    <p>Years of dedicated service making us the preferred choice for shringar needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festival Offer Banner -->
+    <section class="offer-banner">
+        <div class="offer-content fade-up">
+            <span class="offer-tag">Seasonal Special</span>
+            <h2>Shringar Mahotsav 🌸</h2>
+            <p>Get exclusive discounts on Bridal Sets and Premium Makeup this Wedding Season!</p>
+            <div class="offer-countdown">
+                Limited Time Offer: <span>Visit Store Today!</span>
+            </div>
+            <a href="https://wa.me/919827336781" class="btn btn-primary">Claim Offer via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <span class="badge">Visual Tour</span>
+            <h2 class="section-title">Our Store Gallery</h2>
+        </div>
+        <div class="masonry-gallery">
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=400" alt="Store 1"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=600" alt="Store 2"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?auto=format&fit=crop&q=80&w=400" alt="Store 3"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=500" alt="Store 4"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=400" alt="Store 5"></div>
+            <div class="gallery-item"><img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=600" alt="Store 6"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <span class="badge">Happy Clients</span>
+            <h2 class="section-title">What They Say</h2>
+        </div>
+        <div class="testimonial-slider">
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
+                <p>"Best place for bridal jewellery in the city. The collection is unique and the quality is premium."</p>
+                <div class="client-info">
+                    <strong>Priya Sharma</strong>
+                    <span>Verified Customer</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
+                <p>"I always buy my cosmetics from Lucky Shringar. They have all the top brands and genuine products."</p>
+                <div class="client-info">
+                    <strong>Anjali Verma</strong>
+                    <span>Frequent Shopper</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
+                <p>"Excellent service and very reasonable prices. A one-stop shop for all household and beauty needs."</p>
+                <div class="client-info">
+                    <strong>Savitri Devi</strong>
+                    <span>Store Regular</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">Visit us for an unforgettable shopping experience or reach out online.</p>
+                
+                <div class="contact-cards">
+                    <a href="tel:+919827336781" class="contact-card">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="details">
+                            <span>Call Us</span>
+                            <strong>+91 98273 36781</strong>
+                        </div>
+                    </a>
+                    <a href="https://wa.me/919827336781" class="contact-card">
+                        <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="details">
+                            <span>WhatsApp</span>
+                            <strong>Message Now</strong>
+                        </div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="details">
+                            <span>Visit Store</span>
+                            <strong>Main Market, Your City</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-map">
+                <!-- Placeholder for Google Map with glass styling -->
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.6789!2d77.123!3d28.123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzE4LjAiTiA3N8KwMDcnMTguMCJF!5e0!3m2!1sen!2sin!4v1623838000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Lucky Shringar & General Store. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
